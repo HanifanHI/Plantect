@@ -14,6 +14,7 @@ class ApiConfig {
     companion object {
 
         // base url dari end point.
+        // Sesuai kan pada saat running web service
         const val BASE_URL = "http://e518-182-2-70-114.ngrok.io"
         const val IMAGE_URL = "foto_tanaman/"+"image/"
 
@@ -39,7 +40,7 @@ class ApiConfig {
 interface ApiInterface{
 
     @Multipart
-    @POST("/api/image") // end point dari upload
+    @POST("/api/v1/plants/predict") // end point dari upload
     fun upload(
 
         @Part imagename: MultipartBody.Part

@@ -60,7 +60,7 @@ def allowed_file(filename):
 
 
 # ========== PREDICT IMAGE ============================================================================
-@app.route('/api/v1/plants/predict', methods=['POST'])
+@app.route('/api/v2/plants/predict', methods=['POST'])
 def predict():
     if 'image' not in request.files:
         flash('No file part')

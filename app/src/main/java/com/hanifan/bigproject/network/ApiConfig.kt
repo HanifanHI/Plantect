@@ -40,7 +40,7 @@ class ApiConfig {
 interface ApiInterface{
 
     @Multipart
-    @POST("/api/v1/plants/predict") // end point dari upload
+    @POST("/api/v2/plants/predict") // end point dari upload
     fun upload(
 
         @Part imagename: MultipartBody.Part
